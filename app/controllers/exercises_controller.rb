@@ -25,7 +25,11 @@ class ExercisesController < ApplicationController
 
     @exercises = @exercises.page params[:page]
   end
-
+  # -------------------------------------------------------------
+  # replace s0.html root under 'views'
+  def s0
+    render file: 'exercises/Jsparson/exercise/simple/s0'  
+  end
 
   # -------------------------------------------------------------
   # The export function gets all exercises metadata for SPLICE
